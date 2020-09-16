@@ -3,7 +3,7 @@ import Search from './Search';
 import youtube from '../API/youtube';
 import VideoList from './videoList';
 import VideoDetail from './videoDetail';
-
+const KEY = 'AIzaSyBHm-O5JRPuFHvAGKbc6-N3NYNmp8cafSM';
 
 class App extends React.Component{
 
@@ -24,7 +24,7 @@ componentDidMount(){
     params:{
       part: 'snippet',
       maxResults: 5,
-      key: "YOUR_KEY",
+      key: KEY,
       q: term
     }
 
